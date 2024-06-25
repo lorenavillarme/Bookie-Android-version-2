@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicioFragment"
+        android:icon="@drawable/homei"
+        android:title="Explorar" />
+
+    <item
+        android:id="@+id/fragmentApiInicio"
+        android:icon="@drawable/bi"
+        android:title="Biblioteca" />
+    <item
+        android:id="@+id/subirLibroFragment"
+        android:icon="@drawable/add_plus_circle_svgrepo_com"
+        android:title="Subir" />
+    <item
+        android:id="@+id/contactosFragment"
+        android:icon="@drawable/mail"
+        android:title="Mensajes" />
+    <item
+        android:id="@+id/usuarioFragment"
+        android:icon="@drawable/profile"
+        android:title="Perfil" />
+
+
+
+
+</menu>

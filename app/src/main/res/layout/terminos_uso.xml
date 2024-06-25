@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/capriola"
+                android:text="Términos de uso"
+                android:textAlignment="center"
+                android:textColor="#9D5836"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Bienvenido a Bookie, una plataforma de intercambio de libros. Antes de utilizar nuestros servicios, por favor lee atentamente estos términos de uso." />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="1. Registro y datos personales"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Al registrarte en Bookie, aceptas proporcionar información precisa y actualizada. Recolectamos datos personales como nombre, dirección de correo electrónico y dirección postal para facilitar el intercambio de libros y mejorar nuestros servicios. Nos comprometemos a proteger tu privacidad y seguridad de acuerdo con nuestra Política de Privacidad." />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="2. Conducta del usuario"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Esperamos que todos los usuarios de Bookie mantengan una conducta respetuosa y ética. No toleramos el acoso, la discriminación, la violación de derechos de autor u otro comportamiento abusivo. Nos reservamos el derecho de suspender o cancelar cuentas que violen estos principios." />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="3. Uso de la aplicación"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Bookie es una plataforma destinada únicamente al intercambio de libros entre usuarios. Los usuarios son responsables de garantizar que los libros intercambiados cumplan con las leyes de derechos de autor y no infrinjan los derechos de terceros. No nos hacemos responsables del contenido de los libros intercambiados a través de nuestra plataforma." />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="4. Propiedad intelectual"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Todos los derechos de propiedad intelectual relacionados con Bookie y su contenido son propiedad de Bookie. Los usuarios pueden utilizar la aplicación y su contenido únicamente de acuerdo con estos términos de uso. Cualquier uso no autorizado de la aplicación o su contenido está prohibido." />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="5. Responsabilidades y limitaciones"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Bookie se proporciona &quot;tal cual&quot; y no ofrecemos garantías sobre su disponibilidad, precisión o fiabilidad. No nos hacemos responsables de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso de la aplicación." />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="6. Modificaciones y término del servicio"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Nos reservamos el derecho de modificar estos términos de uso en cualquier momento. Los cambios entrarán en vigencia después de su publicación en nuestra plataforma. Si no estás de acuerdo con los cambios, puedes dejar de utilizar nuestros servicios." />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/capriola"
+                android:text="Al utilizar Bookie, aceptas estos términos de uso. "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

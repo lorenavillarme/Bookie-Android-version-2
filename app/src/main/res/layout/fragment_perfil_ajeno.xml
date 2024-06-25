@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:background="@drawable/circle_bg"
+        app:srcCompat="@drawable/aventuras"
+        android:id="@+id/imageView6"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioPerfil"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_ajustes"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ajustar" />
+
+    <TextView
+        android:id="@+id/ciudadPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/capriola"
+        android:text="Ciudad"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/usuarioPerfil"
+        app:layout_constraintStart_toStartOf="@+id/usuarioPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/provinciaPerfil" />
+
+    <TextView
+        android:id="@+id/nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/capriola"
+        android:text="Sin reseñas"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ciudadPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/ciudadPerfil" />
+
+    <ImageView
+        android:id="@+id/rating"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nota"
+        app:layout_constraintStart_toEndOf="@+id/nota"
+        app:layout_constraintTop_toTopOf="@+id/nota"
+        app:srcCompat="@drawable/star" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@color/my_primary"
+        app:tabTextColor="@color/marron"
+        app:tabIndicatorColor="@color/marron"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/books_profile" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/history_profile" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/review_profile" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="237dp" />
+
+    <TextView
+        android:id="@+id/usuarioPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/capriola"
+        android:text="Usuario"
+        android:textColor="#9D5836"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ajustes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/provinciaPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/capriola"
+        android:text="Provincia"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ciudadPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioPerfil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

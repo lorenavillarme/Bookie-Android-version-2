@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAF5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/romance"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/romance" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Romance"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/aventura"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/aventuras" />
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Aventura"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fantasia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/fantasia" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Fantasía"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/misterio"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/misterio" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Misterio"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/thriller"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/thriller" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Thriller"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/psicologia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/psicologia" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Psicología"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/terror"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/terror" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Terror"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/accion"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/accion" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Acción"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tragedia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/tragedia"
+                        tools:srcCompat="@drawable/tragedia" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Tragedia"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ciencia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/ciencia"
+                        tools:srcCompat="@drawable/ciencia" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Ciencia"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/filosofia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/filosofia" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Filosofía"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/poesia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/poesia" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Poesía"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/infantil"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/infantil"
+                        tools:srcCompat="@drawable/infantil" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Infantil"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/aficiones"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/aficciones"
+                        tools:srcCompat="@drawable/aficciones" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Aficiones"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/historia"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/historia"
+                        tools:srcCompat="@drawable/historia" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Historia"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/belico"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/belico"
+                        tools:srcCompat="@drawable/belico" />
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Bélico"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/biografico"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/biografia"
+                        tools:srcCompat="@drawable/biografia" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Biográfico"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/extranjero"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/extranjero"
+                        tools:srcCompat="@drawable/extranjero" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Extranjero"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="67dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/cienciaficcion"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/cienciaficcion"
+                        tools:srcCompat="@drawable/cienciaficcion" />
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:lineSpacingExtra="13sp"
+                        android:text="Sci-Fic"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/educativo"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/educacion"
+                        tools:srcCompat="@drawable/educacion" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Educativo"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/clasico"
+                        android:layout_width="73dp"
+                        android:layout_height="73dp"
+                        android:background="@drawable/circle_bg"
+                        android:clipToOutline="true"
+                        app:srcCompat="@drawable/clasicos"
+                        tools:srcCompat="@drawable/clasicos" />
+
+                    <TextView
+                        android:id="@+id/textView56"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/capriola"
+                        android:gravity="center"
+                        android:text="Clásico"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/cancelar" />
+
+                <ImageButton
+                    android:id="@+id/aniadir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    app:srcCompat="@drawable/aceptar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

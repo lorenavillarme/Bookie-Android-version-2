@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAF5">
+
+        <ImageView
+            android:id="@+id/iniciar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintEnd_toEndOf="@+id/prestadoPregunta"
+            app:layout_constraintStart_toStartOf="@+id/prestadoPregunta"
+            app:layout_constraintTop_toTopOf="@+id/finalizar"
+            app:srcCompat="@drawable/ini" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="@+id/usuario"
+            app:layout_constraintEnd_toStartOf="@+id/usuario"
+            app:layout_constraintTop_toTopOf="@+id/usuario"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/finalizar"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="@+id/prestadoPregunta"
+            app:layout_constraintStart_toStartOf="@+id/prestadoPregunta"
+            app:layout_constraintTop_toBottomOf="@+id/prestadoPregunta"
+            app:srcCompat="@drawable/fina" />
+
+        <TextView
+            android:id="@+id/usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/capriola"
+            android:text="Usuario"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_visto"
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rounded_corners"
+            android:clipToOutline="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#7DF9DBBD"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="El conde de montecristo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="434dp"
+            android:background="#7DF9DBBD"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:text="Titulo"
+            android:textColor="#9D5836"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/autor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="Alexandre Duque"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="Género"
+            android:textColor="#9D5836"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/autor"
+            app:layout_constraintTop_toBottomOf="@+id/autor" />
+
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="Nuevo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="Nº de páginas"
+            android:textColor="#9D5836"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/genero"
+            app:layout_constraintTop_toTopOf="@+id/genero" />
+
+        <TextView
+            android:id="@+id/nPaginas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="SM"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="203dp" />
+
+        <ImageView
+            android:id="@+id/btnEliminar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nPaginas"
+            app:srcCompat="@drawable/btn_eliminar" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/capriola"
+            android:paddingStart="20dp"
+            android:text="Autor"
+            android:textColor="#9D5836"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/titulo"
+            app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+        <TextView
+            android:id="@+id/prestadoPregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/capriola"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="¿Has prestado este libro?"
+            app:layout_constraintEnd_toEndOf="@+id/img_visto"
+            app:layout_constraintStart_toStartOf="@+id/img_visto"
+            app:layout_constraintTop_toBottomOf="@+id/img_visto" />
+
+        <ImageView
+            android:id="@+id/backD"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backk" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

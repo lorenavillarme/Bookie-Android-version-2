@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+    <fragment
+        android:id="@+id/listadoFragment"
+        android:name="com.example.bookie.ui.activity.fragments.libro.ajeno.ListadoFragment"
+        android:label="ListadoFragment" >
+        <action
+            android:id="@+id/action_listadoFragment_to_detallesLibroFragment"
+            app:destination="@id/detallesLibroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentApiInicio"
+        android:name="com.example.bookie.ui.activity.fragments.api.FragmentApiInicio"
+        android:label="FragmentApiInicio" >
+        <action
+            android:id="@+id/action_fragmentApiInicio_to_fragmentBuscadorApi"
+            app:destination="@id/fragmentBuscadorApi" />
+        <action
+            android:id="@+id/action_fragmentApiInicio_to_fragmentLibroApi"
+            app:destination="@id/fragmentLibroApi" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBuscadorApi"
+        android:name="com.example.bookie.ui.activity.fragments.api.FragmentBuscadorApi"
+        android:label="FragmentBuscadorApi" >
+        <action
+            android:id="@+id/action_fragmentBuscadorApi_to_fragmentLibroApi"
+            app:destination="@id/fragmentLibroApi" />
+        <action
+            android:id="@+id/action_fragmentBuscadorApi_to_fragmentApiInicio"
+            app:destination="@id/fragmentApiInicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLibroApi"
+        android:name="com.example.bookie.ui.activity.fragments.api.FragmentLibroApi"
+        android:label="FragmentLibroApi" />
+    <fragment
+        android:id="@+id/subirLibroFragment"
+        android:name="com.example.bookie.ui.activity.fragments.libro.SubirLibroFragment"
+        android:label="SubirLibroFragment" >
+        <action
+            android:id="@+id/action_subirLibroFragment_to_usuarioFragment"
+            app:destination="@id/usuarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuarioFragment"
+        android:name="com.example.bookie.ui.activity.fragments.perfil.UsuarioFragment"
+        android:label="UsuarioFragment" >
+        <action
+            android:id="@+id/action_usuarioFragment_to_miLibroDetalleFragment"
+            app:destination="@id/miLibroDetalleFragment" />
+        <action
+            android:id="@+id/action_usuarioFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_usuarioFragment_to_terminosFragment"
+            app:destination="@id/terminosFragment" />
+        <action
+            android:id="@+id/action_usuarioFragment_to_editarPerfilFragment"
+            app:destination="@id/editarPerfilFragment" />
+        <action
+            android:id="@+id/action_usuarioFragment_to_favoritosPropiosDetallesLibroFragment"
+            app:destination="@id/favoritosPropiosDetallesLibroFragment" />
+        <action
+            android:id="@+id/action_usuarioFragment_to_contactosFragment"
+            app:destination="@id/contactosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.bookie.ui.activity.fragments.InicioFragment"
+        android:label="InicioFragment" >
+        <action
+            android:id="@+id/action_inicioFragment_to_listadoFragment"
+            app:destination="@id/listadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.bookie.ui.activity.fragments.chat.ChatFragment"
+        android:label="ChatFragment" >
+        <action
+            android:id="@+id/action_chatFragment_to_contactosFragment"
+            app:destination="@id/contactosFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_usuarioAjenoFragment"
+            app:destination="@id/usuarioAjenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detallesLibroFragment"
+        android:name="com.example.bookie.ui.activity.fragments.libro.ajeno.DetallesLibroFragment"
+        android:label="DetallesLibroFragment" >
+        <action
+            android:id="@+id/action_detallesLibroFragment_to_usuarioAjenoFragment"
+            app:destination="@id/usuarioAjenoFragment" />
+        <action
+            android:id="@+id/action_detallesLibroFragment_to_contactosFragment"
+            app:destination="@id/contactosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactosFragment"
+        android:name="com.example.bookie.ui.activity.fragments.chat.ContactosFragment"
+        android:label="ContactosFragment" >
+        <action
+            android:id="@+id/action_contactosFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/miLibroDetalleFragment"
+        android:name="com.example.bookie.ui.activity.fragments.libro.propio.MiLibroDetalleFragment"
+        android:label="MiLibroDetalleFragment" >
+        <action
+            android:id="@+id/action_miLibroDetalleFragment_to_usuarioFragment"
+            app:destination="@id/usuarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misLibrosFragment"
+        android:name="com.example.bookie.ui.activity.fragments.libro.propio.MisLibrosFragment"
+        android:label="MisLibrosFragment" />
+
+    <fragment
+        android:id="@+id/reseniaFragment"
+        android:name="com.example.bookie.ui.activity.fragments.ReseniaFragment"
+        android:label="ReseniaFragment" />
+    <fragment
+        android:id="@+id/subirReseniaFragment"
+        android:name="com.example.bookie.ui.activity.fragments.resenias.SubirReseniaFragment"
+        android:label="SubirReseniaFragment" >
+        <action
+            android:id="@+id/action_subirReseniaFragment_to_usuarioAjenoFragment"
+            app:destination="@id/usuarioAjenoFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.bookie.ui.activity.LoginActivity"
+        android:label="LoginActivity" />
+    <fragment
+        android:id="@+id/usuarioAjenoFragment"
+        android:name="com.example.bookie.ui.activity.fragments.perfil.UsuarioAjenoFragment"
+        android:label="UsuarioAjenoFragment" >
+        <action
+            android:id="@+id/action_usuarioAjenoFragment_to_subirReseniaFragment"
+            app:destination="@id/subirReseniaFragment" />
+        <action
+            android:id="@+id/action_usuarioAjenoFragment_to_detallesLibroFragment"
+            app:destination="@id/detallesLibroFragment" />
+        <action
+            android:id="@+id/action_usuarioAjenoFragment_to_favoritosAjenosDetallesLibroFragment"
+            app:destination="@id/favoritosAjenosDetallesLibroFragment" />
+        <action
+            android:id="@+id/action_usuarioAjenoFragment_to_contactosFragment"
+            app:destination="@id/contactosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terminosFragment"
+        android:name="com.example.bookie.ui.activity.fragments.TerminosFragment"
+        android:label="TerminosFragment" />
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.bookie.ui.activity.fragments.perfil.EditarPerfilFragment"
+        android:label="EditarPerfilFragment" >
+        <action
+            android:id="@+id/action_editarPerfilFragment_to_usuarioFragment"
+            app:destination="@id/usuarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosAjenosDetallesLibroFragment"
+        android:name="com.example.bookie.ui.activity.fragments.favoritos.FavoritosAjenosDetallesLibroFragment"
+        android:label="FavoritosAjenosDetallesLibroFragment" >
+        <action
+            android:id="@+id/action_favoritosAjenosDetallesLibroFragment_to_usuarioAjenoFragment"
+            app:destination="@id/usuarioAjenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritosPropiosDetallesLibroFragment"
+        android:name="com.example.bookie.ui.activity.fragments.favoritos.FavoritosPropiosDetallesLibroFragment"
+        android:label="FavoritosPropiosDetallesLibroFragment" >
+        <action
+            android:id="@+id/action_favoritosPropiosDetallesLibroFragment_to_usuarioFragment"
+            app:destination="@id/usuarioFragment" />
+    </fragment>
+</navigation>

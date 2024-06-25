@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.bookie.ui.activity.fragments.registro.Registro1Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/registro1">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.bookie.ui.activity.fragments.registro.Registro2Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/registro2">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_registro3Fragment"
+            app:destination="@id/registro3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro3Fragment"
+        android:name="com.example.bookie.ui.activity.fragments.registro.Registro3Fragment"
+        tools:layout="@layout/registro3">
+
+        <action
+            android:id="@+id/action_registro3Fragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+</navigation>
